@@ -1,0 +1,28 @@
+{
+  "name": "atom-nyancat",
+  "main": "./lib/atom-nyancat",
+  "version": "0.0.1",
+  "description": "Adds a nyancat file progerss indicator to the Atom status bar",
+  "keywords": [
+    "nyancat",
+    "atom",
+    "status bar"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-nyancat:toggle"
+  },
+  "repository": "https://github.com/dz/atom-nyancat",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+  }
+}
