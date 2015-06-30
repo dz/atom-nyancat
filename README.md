@@ -6,7 +6,7 @@ Inspired by: Emacs Nyan Cat mode ([https://github.com/TeMPOraL/nyan-mode](https:
 
 ### Usage
 
-Install plugin. Use.
+Install plugin. Use.  Visit: [https://atom.io/packages/nyancat](https://atom.io/packages/nyancat)
 
 ### Warnings
 
