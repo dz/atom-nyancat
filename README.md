@@ -12,6 +12,8 @@ Install plugin. Use.
 
 This hasn't been thoroughly tested, beacuse thoroughly testing is not in the spirit of nyancat.
 
+(Also this is my first Atom package so if I break everything in your editor, plz just uninstall nyancat.)
+
 ### Screenshot
 
 ![http://i.imgur.com/p2ZUbZY.gif](http://i.imgur.com/p2ZUbZY.gif)
