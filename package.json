@@ -8,9 +8,6 @@
     "atom",
     "status bar"
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-nyancat:toggle"
-  },
   "repository": "https://github.com/dz/atom-nyancat",
   "license": "MIT",
   "engines": {
