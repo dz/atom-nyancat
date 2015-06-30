@@ -35,17 +35,20 @@ module.exports = AtomNyancat =
     @editor_subs = new CompositeDisposable
     @editor_subs.add editor.onDidChangeScrollTop (top) =>
       @update()
+    @update() # update once regardles
 
   unsubLastActive: ->
     if @editor_subs?
       @editor_subs.dispose()
     @editor_subs = null
 
-  update: (refresh=false) ->
+  update: ->
     editor = atom.workspace.getActiveTextEditor()
     @view.clear()
-    if not editor?
-      return
-    lastVisibleRow = editor.getVisibleRowRange()[1]
-    lastScreenLine = editor.getScreenLineCount()
-    @view.updateScroll(lastVisibleRow/parseFloat(lastScreenLine))
+    if editor?
+      lastVisibleRow = editor.getVisibleRowRange()[1]
+      lastScreenLine = editor.getScreenLineCount()
+      percent = lastVisibleRow/parseFloat(lastScreenLine)
+    else
+      precent = 1
+    @view.updateScroll(percent)

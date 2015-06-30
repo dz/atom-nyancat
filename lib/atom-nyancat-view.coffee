@@ -40,7 +40,7 @@ class AtomNyancatView
 
     catBody = document.createElement('span')
     catBody.classList.add('atom-nyancat-body')
-    catBody.style.width = Math.ceil(max_width * progress) + "px"
+    catBody.style.width = Math.max(Math.ceil(max_width * progress), 40) + "px"
 
     catHead = document.createElement('span')
     catHead.classList.add('atom-nyancat-head')
