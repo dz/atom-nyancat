@@ -46,8 +46,8 @@ module.exports = AtomNyancat =
     editor = atom.workspace.getActiveTextEditor()
     @view.clear()
     if editor?
-      lastVisibleRow = editor.getVisibleRowRange()[1]
-      lastScreenLine = editor.getScreenLineCount()
+      lastVisibleRow = editor.firstVisibleScreenRow
+      lastScreenLine = editor.getLineCount() - editor.rowsPerPage
       percent = lastVisibleRow/parseFloat(lastScreenLine)
     else
       precent = 1
