@@ -34,13 +34,14 @@ class AtomNyancatView
       progress = 1
     percentage = 100 * parseFloat(progress)
 
+    catHeadSize = 29
     max_width = 200
-
+    tailSize = (max_width-catHeadSize) * progress
     @element.style.width = max_width + "px"
 
     catBody = document.createElement('span')
     catBody.classList.add('atom-nyancat-body')
-    catBody.style.width = Math.max(Math.ceil(max_width * progress), 40) + "px"
+    catBody.style.width = Math.min(catHeadSize+tailSize,200) + "px"
 
     catHead = document.createElement('span')
     catHead.classList.add('atom-nyancat-head')
