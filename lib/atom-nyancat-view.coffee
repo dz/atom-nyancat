@@ -30,7 +30,7 @@ class AtomNyancatView
   # percentage should be number between 0 and 1
   updateScroll: (progress) ->
     # round percentage up
-    if progress > 0.9
+    if progress + .000001 > 1
       progress = 1
     percentage = 100 * parseFloat(progress)
 
