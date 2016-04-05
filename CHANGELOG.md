@@ -1,6 +1,7 @@
-## 0.3.0 - Bug fixes
+## 0.7.0 - Bug fixes
 * I lied again in `0.2.0`
 * But now every bug is fixed
+* Jump 0.5 versions because cats
 
 ## 0.2.0 - Bug fixes
 * I lied in `0.1.0`

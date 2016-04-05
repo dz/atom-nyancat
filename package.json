@@ -1,7 +1,7 @@
 {
   "name": "nyancat",
   "main": "./lib/atom-nyancat",
-  "version": "0.4.0",
+  "version": "0.7.0",
   "description": "Adds a nyancat file progress indicator to the Atom status bar",
   "keywords": [
     "nyancat",
