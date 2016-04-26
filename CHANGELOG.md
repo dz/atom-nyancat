@@ -1,3 +1,8 @@
+## 0.9.2 - Bug fixes
+* Adjust CSS background color variable usage
+* Now every bug is fixed
+* Jump to 0.9.2 because the cats are at it again
+
 ## 0.7.0 - Bug fixes
 * I lied again in `0.2.0`
 * But now every bug is fixed
