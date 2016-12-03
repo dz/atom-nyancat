@@ -34,16 +34,23 @@ class AtomNyancatView
       progress = 1
     percentage = 100 * parseFloat(progress)
 
-    catHeadSize = 29
-    max_width = 200
-    tailSize = (max_width-catHeadSize) * progress
-    @element.style.width = max_width + "px"
+    catHeadSize = 18
+    catArseSize = 9
+    catSize = catArseSize + catHeadSize
+    maxWidth = 200
+    trailSize = (maxWidth - catHeadSize) * progress + catArseSize
+    @element.style.width = maxWidth + "px"
 
-    catBody = document.createElement('span')
-    catBody.classList.add('atom-nyancat-body')
-    catBody.style.width = Math.min(catHeadSize+tailSize,200) + "px"
+    catTrail = document.createElement('span')
+    catTrail.classList.add('atom-nyancat-trail')
+    catTrail.style.width = Math.min(trailSize, maxWidth - catHeadSize) + "px"
 
     catHead = document.createElement('span')
     catHead.classList.add('atom-nyancat-head')
-    catBody.appendChild(catHead)
-    @element.appendChild(catBody)
+
+    catArse = document.createElement('span')
+    catArse.classList.add('atom-nyancat-arse')
+
+    catTrail.appendChild(catArse)
+    @element.appendChild(catTrail)
+    @element.appendChild(catHead)
