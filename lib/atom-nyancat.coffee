@@ -32,8 +32,9 @@ module.exports = AtomNyancat =
     editor = atom.workspace.getActiveTextEditor()
     if not editor?
       return
+    editorElement = editor.getElement()
     @editor_subs = new CompositeDisposable
-    @editor_subs.add editor.onDidChangeScrollTop (top) =>
+    @editor_subs.add editorElement.onDidChangeScrollTop (top) =>
       @update()
     @update() # update once regardles
 
