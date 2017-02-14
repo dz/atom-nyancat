@@ -1,3 +1,7 @@
+## 0.13.0 - Bug fixes
+* Updated deprecated atom methods
+* Background of cat is now transparent
+
 ## 0.11.0 - Bug fixes
 * Adjust CSS background color variable usage
 * Now every bug is fixed
