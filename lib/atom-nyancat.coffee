@@ -51,5 +51,5 @@ module.exports = AtomNyancat =
       lastScreenLine = editor.getLineCount() - editor.rowsPerPage
       percent = lastVisibleRow/parseFloat(lastScreenLine)
     else
-      precent = 1
+      percent = 1
     @view.updateScroll(percent)
