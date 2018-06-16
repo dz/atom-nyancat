@@ -9,10 +9,10 @@ class AtomNyancatView
     # Create root element
     @element = document.createElement('div')
     @element.classList.add('inline-block', 'atom-nyancat')
-    @element.style.width = "200px"
 
     @catTrail = document.createElement('span')
     @catTrail.classList.add('atom-nyancat-trail')
+    @catTrail.style.minWidth = catArseSize + "px";
 
     catHead = document.createElement('span')
     catHead.classList.add('atom-nyancat-head')
@@ -49,11 +49,8 @@ class AtomNyancatView
 
   # percentage should be number between 0 and 1
   updateScroll: (progress) ->
-
-    maxWidth = 200
-    trailSize = (maxWidth - catHeadSize) * progress + catArseSize
-
-    @catTrail.style.width = Math.min(trailSize, maxWidth - catHeadSize) + "px"
+    progress = Math.min(progress * 100, 100);
+    @catTrail.style.width = "calc(" + progress + "% - " + catHeadSize + "px)"
 
   hide: ->
     @element.classList.add('hide')

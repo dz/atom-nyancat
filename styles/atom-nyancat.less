@@ -5,10 +5,15 @@
 @import "ui-variables";
 
 .status-bar .status-bar-left {
+  display: flex;
+  flex-direction: row;
+
   .atom-nyancat {
     background-color: @app-background-color;
     height: 23px;
     padding: 3px 0 3px 0;
+    max-width: none;
+    flex: 1;
   }
 
   .atom-nyancat-trail {
